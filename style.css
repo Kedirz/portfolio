@@ -32,7 +32,7 @@ img {
   padding: 5px;
 }
 .tech-stack li:hover {
-  color: white;
+  color: rgb(222, 219, 219);
   text-shadow: #9ecaed;
   font-size: 25px;
 }
@@ -43,13 +43,15 @@ img {
 
 #projects {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #projects div {
   padding: 2%;
   margin: 2%;
+  width: 70%;
+  height: 250px;
 }
 .project-img {
   height: 100%;
@@ -62,7 +64,8 @@ nav {
   justify-content: space-between;
   margin: 15px;
   padding: 15px;
-  box-shadow: 0 0 10px #9ecaed;
+  box-shadow: 0 0 15px #9ecaed;
+
 }
 @media (max-width: 500px) {
   #projects {
@@ -87,4 +90,12 @@ a {
 }
 .non-nav {
   margin: 35px;
+}
+
+
+#projects div:hover {
+  box-shadow: 0 4px 8px 0 rgba(48, 117, 203, 0.2), 0 6px 20px 0 rgba(0, 255, 38, 0.19);
+  border-radius: 25px;
+  transition: 0.4s;
+  transform: scale(1.2);
 }
