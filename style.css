@@ -64,7 +64,8 @@ nav {
   justify-content: space-between;
   margin: 15px;
   padding: 15px;
-  box-shadow: 0 0 15px #9ecaed;
+  box-shadow: 0 0 15px #058bf9;
+  border-radius: 15px;
 
 }
 @media (max-width: 500px) {
@@ -83,7 +84,7 @@ nav div > * {
   padding: 15px;
   margin-top: 15px;
 }
-a {
+nav a {
   text-decoration: none;
   color: wheat;
   font-size: 25px;
@@ -98,4 +99,16 @@ a {
   border-radius: 25px;
   transition: 0.4s;
   transform: scale(1.2);
+}
+.links {
+  /* color: white; */
+  margin: 3% 25%;
+}
+.links i {
+  padding-left: 25%;
+}
+.links i:hover {
+  color: rgb(52, 255, 215);
+  transition: 0.5s;
+  transform: translateY(-5px);
 }
