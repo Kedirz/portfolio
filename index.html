@@ -31,7 +31,7 @@
         <h1>Hi, My name is <span class="glowing">Kedir Zeinu</span>.</h1>
         <p>I am a Software Engineer, who enjoys learning and scraping new stuff. I started coding when I was in high school doing very basic stuff, like building static website with html. I pursued Computer Science undergraduate school in Mekelle Institute of Technology, in Mekelle, Tigray.</p>
         <p>You can reach me at &nbsp; <span style="color: white; font-size: larger">kmzeinu@gmail.com</span> &nbsp;
-          <i style="color: lightgray;" class="fa-solid fa-clipboard fa-lg"></i>
+          <i id="copyicon" onclick="copyClipBoard()" style="color: lightgray;" class="fa-solid fa-clipboard fa-lg"></i>
         </p>
 
         <br/>
@@ -70,7 +70,11 @@
     </footer>
 
     <script>
-
+      function copyClipBoard() {
+        navigator.clipboard.writeText('kmzeinu@gamil.com');
+        const i = document.getElementById('copyicon');
+        i.style.color = "grey";
+      }
     </script>
   </body>
 </html>
