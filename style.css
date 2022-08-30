@@ -6,6 +6,7 @@ body {
   color: rgb(118, 129, 161);
   font-size: large;
   transition: 0.2s;
+  font-family:   Arial, Helvetica, sans-serif;
 }
 body > * {
   transition: 0.2s;
@@ -74,17 +75,19 @@ nav {
   border-radius: 15px;
 
 }
-@media (max-width: 500px) {
+@media (max-width: 860px) {
   #projects {
     flex-direction: column;
   }
-  nav a {
-    display: none;
+  nav div a {
+    font-size: medium;
   }
   nav {
     width: 90%;
   }
-
+  body {
+    font-size: medium;
+  }
 }
 nav div > * {
   padding: 15px;
